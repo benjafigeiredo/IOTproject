@@ -6,8 +6,9 @@
 
 const SmartApp = require('@smartthings/smartapp');
 const app = new SmartApp();
-const {SmartThingsClient, BearerTokenAuthenticator} = require('@smartthings/core-sdk')
-const client = new SmartThingsClient(new BearerTokenAuthenticator('cde6d476-ebe2-4ea1-b4e4-752370f76312')) // PAT token
+const {SmartThingsClient, BearerTokenAuthenticator} = require('@smartthings/core-sdk');
+const client = new SmartThingsClient(new BearerTokenAuthenticator('cde6d476-ebe2-4ea1-b4e4-752370f76312')); // PAT token
+const add = false; 
 
 //#endregion
 
@@ -132,7 +133,6 @@ app.enableEventLogging(2)  // Log and pretty-print all lifecycle events and resp
     {
         // Changed state.add to a boolean variable. its right?
         // the add variable it's for check if we've to increment or decrement the level of the switch.
-        const add = false; 
         const quiet = await othersQuiet(ctx, ctx.config.motionSensors, event.deviceId);
         if (!quiet)
         {
@@ -188,8 +188,7 @@ app.enableEventLogging(2)  // Log and pretty-print all lifecycle events and resp
 
         if (quiet)
         {
-            const lastTimeInactive = new Date (ctx.api.devices.getCapabilityStatus (event.deviceId, 'main', 'motionSensor').motion.timestamp); // ok?
-            const elapsed = new Date() - lastTimeInactive; 
+            const elapsed = await ctx.api.devices.getCapabilityStatus (event.deviceId, 'main', 'motionSensor').motion.timestamp; // ok?
             const threshold = 1000 * 60 * ctx.configNumberValue('offDelay')*0.1; 
     
             if (elapsed >= threshold)
