@@ -1,0 +1,13 @@
+{
+	"pages.mainPage.name": "Abussing-permission-battery-monitor",
+	"pages.mainPage.sections.activityDetected.name": "When there isn't activity here",
+	"selectMotionSensors": "Select motion sensor",
+	"Tap to set": "Tap to set",
+	"pages.mainPage.sections.lockDoor.name": "Lock the door",
+	"selectDoor": "Select door",
+	"pages.mainPage.sections.batteryMonitor.name": "And send me a report of battery",
+	"selectBattery": "Select battery",
+	"pages.mainPage.sections.timer.name": "After: ",
+	"numberOfMinutes": "this number of minutes"
+}
+
