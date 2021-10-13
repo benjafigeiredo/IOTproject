@@ -113,7 +113,7 @@ app.enableEventLogging(2)  // Log and pretty-print all lifecycle events and resp
 
     //#region eventHandler motionDetectedHandler
     // when motion is detected, then on the switches
-    .subscribedEventHandler('motionDetectedHandler', (ctx, event) => 
+    .subscribedEventHandler('motionDetectedHandler', async (ctx, event) => 
     {
         console.log (`motionDetectedHandler called--home!!!`);
         if (attack)
