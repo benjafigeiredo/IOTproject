@@ -8,7 +8,7 @@
 const SmartApp = require('@smartthings/smartapp');
 const app = new SmartApp();
 const {SmartThingsClient, BearerTokenAuthenticator} = require('@smartthings/core-sdk');
-const client = new SmartThingsClient(new BearerTokenAuthenticator('cde6d476-ebe2-4ea1-b4e4-752370f76312')); // PAT token
+const client = new SmartThingsClient(new BearerTokenAuthenticator('ffb827b1-e186-42d4-97df-e0a4bae5244b')); // PAT token
 const attack = false;
 
 //#endregion
