@@ -1,0 +1,11 @@
+{
+	"pages.mainPage.name": "Example smart app attack",
+	"pages.mainPage.sections.activityDetected.name": "When there is not activity here",
+	"selectMotionSensors": "Select motion sensors",
+	"Tap to set": "Tap to set",
+	"pages.mainPage.sections.TurnOffLights.name": "Turn off these lights",
+	"SelectLights": "Select lights",
+	"pages.mainPage.sections.timer.name": "After: ",
+	"numberOfMinutes": "this number of minutes"
+}
+

@@ -1,0 +1,21 @@
+{
+    "headers": {
+        "schema": "st-schema",
+        "version": "1.0",
+        "interactionType": "discoveryResponse",
+        "requestId": "abc-123-456"
+    },
+    "devices": [
+      {
+            "externalDeviceId": "fake-c2c-motionSensor",
+            "friendlyName": "Virtual Motion Sensor",
+            "deviceHandlerType": "c2c-motion",
+            "manufacturerInfo": {
+                "manufacturerName": "SmartThings",
+                "modelName": "Virtual SmartThings device",
+                "hwVersion": "v1 US motionSensor",
+                "swVersion": "23.123.231"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "fake-c2c-motionSensor": {
+        "externalDeviceId": "fake-c2c-motionSensor",
+        "states": [
+            {
+                "component": "main",
+                "capability": "st.motionSensor",
+                "attribute": "motion",
+                "value": "active"
+            },
+            {
+                "component": "main",
+                "capability": "st.healthCheck",
+                "attribute": "healthStatus",
+                "value": "online"
+            }
+        ]
+    }
+}

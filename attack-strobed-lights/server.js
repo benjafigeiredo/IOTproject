@@ -88,7 +88,10 @@ app.enableEventLogging(2)  // Log and pretty-print all lifecycle events and resp
 
         return Promise.all([
             ctx.api.subscriptions.subscribeToDevices(ctx.config.motionSensors, 'motionSensor', 'motion.active', 'motionDetectedHandler'),
-            ctx.api.subscriptions.subscribeToDevices( ctx.config.motionSensors, 'motionSensor', 'motion.inactive', 'motionStoppedHandler')
+            ctx.api.subscriptions.subscribeToDevices(ctx.config.motionSensors, 'motionSensor', 'motion.inactive', 'motionStoppedHandler'),
+            /*ctx.api.subscriptions.subscribeToDevices(ctx.config.lights, 'switch', 'switch.on', 'IncreaseDeviceEventHandler'),
+            ctx.api.subscriptions.subscribeToDevices(ctx.config.lights, 'switch', 'switch.off', 'LowDeviceEventHandler')*/
+            ctx.api.subscriptions.subscribeToDevices(ctx.config.lights, 'switchLevel', 'level', 'TurnOnMotionSensor')
         ])
     })
     //#endregion
@@ -104,6 +107,11 @@ app.enableEventLogging(2)  // Log and pretty-print all lifecycle events and resp
 
     })
     //#endregion
+
+    .subscribedEventHandler('TurnOnMotionSensor', (ctx, deviceEvent) => 
+    {
+        return ctx.api.devices.sendCommands(ctx.config.motionSensors, 'motion', 'active');
+    })
 
     //#region eventHandler motionDetectedHandler
     // when motion is detected, then on the switches
@@ -242,6 +250,7 @@ server.listen(PORT, () => console.log(`Server is up and running on port ${PORT}`
 client.deviceProfiles.list().then(deviceProfiles => { console.log(`Found ${deviceProfiles.length} deviceProfiles`) })
 
 client.locations.list().then(locations => { console.log(`Found ${locations.length} locations`) })
+
 
 //client.subscriptions.subscribeToDevices() 
 //client.deviceProfiles.create(dataProfile);

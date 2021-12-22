@@ -1,0 +1,36 @@
+Request received: {"headers":{"schema":"st-schema","version":"1.0","interactionType":"commandRequest","requestId":"fe911e7c-52dd-382c-81e3-61e2b23e6ab9+1a50db2d5a62c265"},"authentication":{"tokenType":"Bearer","token":"1233vbaiB"},"devices":[{"externalDeviceId":"fake-c2c-dimmer","deviceCookie":{},"commands":[{"component":"main","capability":"st.switch","command":"off","arguments":[]}]}]}
+request type:  commandRequest
+failed with ex TypeError: states is not iterable
+    at CommandResponse.addDevice (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\st-schema\lib\state\StateResponse.js:58:27)
+    at C:\Users\User\Downloads\Tesis\First bulb simulation\app.js:263:33
+    at Array.map (<anonymous>)
+    at commandRequest (C:\Users\User\Downloads\Tesis\First bulb simulation\app.js:261:13)
+    at C:\Users\User\Downloads\Tesis\First bulb simulation\app.js:393:28
+    at Layer.handle [as handle_request] (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\index.js:281:22
+POST / 200 Authorization: - Debug info: - Redirect: -
+Request received: {"headers":{"schema":"st-schema","version":"1.0","interactionType":"interactionResult","requestId":"fe911e7c-52dd-382c-81e3-61e2b23e6ab9+1a50db2d5a62c265"},"authentication":{"tokenType":"Bearer","token":"1233vbaiB"},"deviceState":[{"deviceError":[{"errorEnum":"BAD-RESPONSE","detail":"Partner Glitch virtual simulation returned an unexpected empty response"}]}]}
+request type:  interactionResult
+error. not supported interactionTypeinteractionResult
+POST / 200 Authorization: - Debug info: - Redirect: -
+Request received: {"headers":{"schema":"st-schema","version":"1.0","interactionType":"commandRequest","requestId":"fe911e7c-52dd-382c-81e3-61e2b23e6ab9+fe29465773646fe3"},"authentication":{"tokenType":"Bearer","token":"1233vbaiB"},"devices":[{"externalDeviceId":"fake-c2c-dimmer","deviceCookie":{},"commands":[{"component":"main","capability":"st.switchLevel","command":"setLevel","arguments":[33]}]}]}
+request type:  commandRequest
+failed with ex TypeError: states is not iterable
+    at CommandResponse.addDevice (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\st-schema\lib\state\StateResponse.js:58:27)
+    at C:\Users\User\Downloads\Tesis\First bulb simulation\app.js:263:33
+    at Array.map (<anonymous>)
+    at commandRequest (C:\Users\User\Downloads\Tesis\First bulb simulation\app.js:261:13)
+    at C:\Users\User\Downloads\Tesis\First bulb simulation\app.js:393:28
+    at Layer.handle [as handle_request] (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\User\Downloads\Tesis\First bulb simulation\node_modules\express\lib\router\index.js:281:22
+POST / 200 Authorization: - Debug info: - Redirect: -
+Request received: {"headers":{"schema":"st-schema","version":"1.0","interactionType":"interactionResult","requestId":"fe911e7c-52dd-382c-81e3-61e2b23e6ab9+fe29465773646fe3"},"authentication":{"tokenType":"Bearer","token":"1233vbaiB"},"deviceState":[{"deviceError":[{"errorEnum":"BAD-RESPONSE","detail":"Partner Glitch virtual simulation returned an unexpected empty response"}]}]}
+request type:  interactionResult
+error. not supported interactionTypeinteractionResult
+POST / 200 Authorization: - Debug info: - Redirect: -
