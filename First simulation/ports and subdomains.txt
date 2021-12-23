@@ -1,0 +1,11 @@
+Motion Sensor simulator - port: 3001, subdomain: heloiseheloise
+command: lt --subdomain heloiseheloise --port 3001
+
+Light simulator - port: 3002, subdomain: benjaminfigeiredo
+command: lt --subdomain benjaminfigeiredo --port 3002
+
+Smoke Detector simulator - port: 3003, subdomain: iotproject
+command: lt --subdomain iotproject --port 3003
+
+Alarm simulator - port: 3004, subdomain: inriainria
+command: lt --subdomain inriainria --port 3004
