@@ -1,0 +1,19 @@
+{
+    "fake-c2c-alarm": {
+        "externalDeviceId": "fake-c2c-alarm",
+        "states": [
+            {
+                "component": "main",
+                "capability": "st.alarm",
+                "attribute": "alarm",
+                "value": "off"
+            },
+            {
+                "component": "main",
+                "capability": "st.healthCheck",
+                "attribute": "healthStatus",
+                "value": "online"
+            }
+        ]
+    }
+}

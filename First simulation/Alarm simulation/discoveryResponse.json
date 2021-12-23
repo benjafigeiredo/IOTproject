@@ -1,0 +1,21 @@
+{
+    "headers": {
+        "schema": "st-schema",
+        "version": "1.0",
+        "interactionType": "discoveryResponse",
+        "requestId": "abc-123-456"
+    },
+    "devices": [
+      {
+            "externalDeviceId": "fake-c2c-alarm",
+            "friendlyName": "Virtual Alarm",
+            "deviceHandlerType": "c2c-siren-2",
+            "manufacturerInfo": {
+                "manufacturerName": "SmartThings",
+                "modelName": "Virtual SmartThings device",
+                "hwVersion": "v1 US alarm",
+                "swVersion": "23.123.231"
+            }
+        }
+    ]
+}

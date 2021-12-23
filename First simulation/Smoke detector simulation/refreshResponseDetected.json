@@ -1,0 +1,19 @@
+{
+    "fake-c2c-CODetector": {
+        "externalDeviceId": "fake-c2c-CODetector",
+        "states": [
+            {
+                "component": "main",
+                "capability": "st.carbonMonoxideDetector",
+                "attribute": "carbonMonoxide",
+                "value": "detected"
+            },
+            {
+                "component": "main",
+                "capability": "st.healthCheck",
+                "attribute": "healthStatus",
+                "value": "online"
+            }
+        ]
+    }
+}

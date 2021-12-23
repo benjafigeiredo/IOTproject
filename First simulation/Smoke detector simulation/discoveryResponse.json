@@ -1,0 +1,21 @@
+{
+    "headers": {
+        "schema": "st-schema",
+        "version": "1.0",
+        "interactionType": "discoveryResponse",
+        "requestId": "abc-123-456"
+    },
+    "devices": [
+      {
+            "externalDeviceId": "fake-c2c-CODetector",
+            "friendlyName": "Virtual CODetector",
+            "deviceHandlerType": "c2c-carbon-monoxide",
+            "manufacturerInfo": {
+                "manufacturerName": "SmartThings",
+                "modelName": "Virtual SmartThings device",
+                "hwVersion": "v1 US CODetector",
+                "swVersion": "23.123.231"
+            }
+        }
+    ]
+}
